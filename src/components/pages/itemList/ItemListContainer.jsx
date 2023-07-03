@@ -1,4 +1,3 @@
-import React from 'react'
 import ItemList from './ItemList'
 
 const ItemListContainer = () => {
@@ -6,7 +5,6 @@ const ItemListContainer = () => {
     return (
         <div>
             <ItemList greeting={saludo} />
-
         </div>
     )
 }
