@@ -30,21 +30,6 @@ const ItemDetailContainer = () => {
         <Grid    item xs={6} md={3} lg={2}> 
         < ItemDetail product={product} agregarAlCarrito={agregarCarrito} />
         </Grid>
-        <Grid item xs={6} md={3} lg={2}> 
-        < ItemDetail product={product} agregarAlCarrito={agregarCarrito} />
-        </Grid>
-        <Grid item xs={6} md={3} lg={2}> 
-        < ItemDetail product={product} agregarAlCarrito={agregarCarrito} />
-        </Grid>
-        <Grid item xs={6} md={3} lg={2}> 
-        < ItemDetail product={product} agregarAlCarrito={agregarCarrito} />
-        </Grid>
-        <Grid item xs={6} md={3} lg={2}> 
-        < ItemDetail product={product} agregarAlCarrito={agregarCarrito} />
-        </Grid>
-        <Grid item xs={6} md={3} lg={2}> 
-        < ItemDetail product={product} agregarAlCarrito={agregarCarrito} />
-        </Grid>
 
       </Grid>
     </div>

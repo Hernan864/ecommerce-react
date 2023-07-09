@@ -8,16 +8,16 @@ const Navbar = ({handleClick}) => {
       <img src={logo} alt="Logo de marca" className="nav-logo" />
       <ul className="nav-menu">
         <li onClick={handleClick} className="menu-item">
-          Pantalones
+          Home
         </li>
         <li onClick={handleClick} className="menu-item">
-          Medias
+          Todos
         </li>
         <li onClick={handleClick} className="menu-item">
-          Ropa interior
+          Perfumeria
         </li>
         <li onClick={handleClick} className="menu-item">
-          Gorras y gorritos
+          Maquillaje
         </li>
       </ul>
       <CartWidget />

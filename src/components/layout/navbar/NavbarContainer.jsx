@@ -8,16 +8,16 @@ const NavbarContainer = () => {
             alert("Preciono el Link del Home");
     
             break;
-          case "NATURA":
-            alert("Preciono el Link del Natura");
+          case "TODOS":
+            alert("Preciono el Link de todos");
     
             break;
-          case "TUPPERWARE":
-            alert("Preciono el Link del Tupperware");
+          case "PERFUMERIA":
+            alert("Preciono el Link de perfumeria");
     
             break;
-          case "CARRITO":
-            alert("Preciono el Link del carrito");
+          case "MAQUILLAJE":
+            alert("Preciono el Link de maquillaje");
     
             break;
     

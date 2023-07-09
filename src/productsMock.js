@@ -3,58 +3,39 @@ export const products = [
     
   {
       id: 1,
-      title: "Nike 360",
-      price: 15000,
+      title: "Kaiak",
+      price: 8068,
       stock: 2,
-      description: "Estas son las mejores zapatillas",
-      category: "deportivas",
-      img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+      description: "Kaiak Clasico Femenino",
+      category: "perfumeria",
+      img: "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw854194e4/1200x1200/111176_1.jpg"
   },
   {
       id: 2,
-      title: "Nike 360",
-      price: 15000,
-      stock: 2,
-      description: "Estas son las mejores zapatillas",
-      category: "deportivas",
-      img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+      title: "Essencial",
+      price: 13433,
+      stock: 5,
+      description: "Essencial Exclusivo Eau de Parfum Femenino 100ml",
+      category: "perfumeria",
+      img: "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwabcf27a4/NATARG-93618_1.jpg"
   },
   {
       id: 3,
-      title: "Nike 360",
+      title: "Una",
       price: 15000,
       stock: 2,
-      description: "Estas son las mejores zapatillas",
-      category: "deportivas",
-      img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+      description: "Mascara Una 2 en 1",
+      category: "maquillaje",
+      img: "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwf9a5bfe3/1200x1200/106123_1.jpg"
   },
   {
       id: 4,
-      title: "Nike 360",
+      title: "Tododia",
       price: 15000,
       stock: 2,
-      description: "Estas son las mejores zapatillas",
-      category: "deportivas",
-      img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
-  },
-  {
-      id: 5,
-      title: "Nike 360",
-      price: 15000,
-      stock: 2,
-      description: "Estas son las mejores zapatillas",
-      category: "deportivas",
-      img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
-  },
-  {
-      id: 6,
-      title: "Nike 360",
-      price: 15000,
-      stock: 2,
-      description: "Estas son las mejores zapatillas",
-      category: "deportivas",
-      img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
-  },
-
+      description: "Balsamo Regenerador Labial Cereza y Avellana Tododia",
+      category: "maquillaje",
+      img: "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw1449ee6d/NATARG-20709_1.jpg"
+  }
 
 ]
