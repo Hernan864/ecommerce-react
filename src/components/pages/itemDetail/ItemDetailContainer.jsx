@@ -1,28 +1,29 @@
 import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail"
 import { Grid } from "@mui/material";
+import { products } from "../../../productsMock";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState({
-    id:1,
-    name: "panton Jean",
-    price: 7000,
-    stock:5
-  });
-  const [carrito, setCarrito] = useState([]);
-   
+  const [product, setProduct] = useState([]);
+  let {id}=useParams();
+
+  
+  useEffect( ()=>{
+    let promesa = new Promise ((resolve, reject)=>{
+      let productSelected=products.find((product)=> product.id=== +id)
+      resolve(productSelected)
+    });
+    promesa.then((res)=>setProduct(res)).catch(err=>{console.log(err)})
+  },[id])
+  
   const agregarCarrito=(cantidad)=>{
     let data={
       ...product,
        cantidad:cantidad
       }
-    carrito.push(data);
-    console.log(carrito);
+    console.log(data);
   }
-  useEffect( ()=>{
-    
-        
-  },[])
 
   return (
     <div>

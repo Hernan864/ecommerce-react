@@ -1,24 +1,24 @@
+import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import "./Navbar.css";
-const Navbar = ({handleClick}) => {
+const Navbar = () => {
   
   return (
     <div className="nav-container">
-      <img src={logo} alt="Logo de marca" className="nav-logo" />
+      <Link to="/">
+        <img src={logo} alt="Logo de marca" className="nav-logo" />
+      </Link>
       <ul className="nav-menu">
-        <li onClick={handleClick} className="menu-item">
-          Home
-        </li>
-        <li onClick={handleClick} className="menu-item">
-          Todos
-        </li>
-        <li onClick={handleClick} className="menu-item">
-          Perfumeria
-        </li>
-        <li onClick={handleClick} className="menu-item">
-          Maquillaje
-        </li>
+        <Link to="/">
+          <li className="menu-item">Todos</li>
+        </Link>
+        <Link to="/category/perfumeria">
+          <li className="menu-item">Perfumeria</li>
+        </Link>
+        <Link to="/category/maquillaje">
+          <li className="menu-item">Maquillaje</li>
+        </Link>
       </ul>
       <CartWidget />
     </div>
