@@ -4,6 +4,7 @@ import { Grid } from "@mui/material";
 import { products } from "../../../productsMock";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
+import Swal from "sweetalert2";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState([]);
@@ -28,6 +29,13 @@ const ItemDetailContainer = () => {
        cantidad:cantidad
       }
     addToCart(data);
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Producto agregado',
+      showConfirmButton: true,
+      timer: 1500
+    })
   }
 
   return (
