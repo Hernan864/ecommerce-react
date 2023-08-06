@@ -1,9 +1,8 @@
-import Footer from "./Footer"
 
 const FooterContainer = () => {
     return (
         <div>
-            <Footer />
+            <h1>Este es el footer</h1>
         </div>
     )
 }
