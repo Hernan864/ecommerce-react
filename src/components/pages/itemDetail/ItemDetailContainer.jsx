@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import ItemDetail from "./ItemDetail"
 import { Grid } from "@mui/material";
-import { products } from "../../../productsMock";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
-
+import { db } from "../../../firebaseConfig";
+import { getDoc, collection, doc} from "firebase/firestore"; 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState([]);
 
@@ -16,11 +16,9 @@ const ItemDetailContainer = () => {
   let cantidadEnCarrito=getCantidadPorId(id);
 
   useEffect( ()=>{
-    let promesa = new Promise ((resolve)=>{
-      let productSelected=products.find((product)=> product.id=== +id)
-      resolve(productSelected)
-    });
-    promesa.then((res)=>setProduct(res)).catch(err=>{console.log(err)})
+    let refCollection = collection(db,"products")
+    let refDoc= doc(refCollection, id)
+    getDoc(refDoc).then(res => setProduct({...res.data(), id:res.id}))
   },[id])
   
   const agregarCarrito=(cantidad)=>{
