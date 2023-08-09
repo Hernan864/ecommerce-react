@@ -2,7 +2,6 @@
 export const products = [
     
   {
-      id: 1,
       title: "Kaiak",
       price: 8068,
       stock: 6,
@@ -11,7 +10,6 @@ export const products = [
       img: "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw854194e4/1200x1200/111176_1.jpg"
   },
   {
-      id: 2,
       title: "Essencial",
       price: 13433,
       stock: 5,
@@ -20,7 +18,6 @@ export const products = [
       img: "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwabcf27a4/NATARG-93618_1.jpg"
   },
   {
-      id: 3,
       title: "Una",
       price: 15000,
       stock: 8,
@@ -29,7 +26,6 @@ export const products = [
       img: "https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwf9a5bfe3/1200x1200/106123_1.jpg"
   },
   {
-      id: 4,
       title: "Tododia",
       price: 15000,
       stock: 2,

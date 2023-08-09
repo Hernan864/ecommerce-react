@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import "./Navbar.css";
-const Navbar = () => {
+const Navbar = ({userRol}) => {
   
   return (
     <div className="nav-container">
@@ -19,6 +19,10 @@ const Navbar = () => {
         <Link to="/category/maquillaje">
           <li className="menu-item">Maquillaje</li>
         </Link>
+     
+        {
+          userRol === "admin" && <Link to="/dashboard"><li className="menu-item">Admin</li></Link>
+        }
       </ul>
       <CartWidget />
     </div>
