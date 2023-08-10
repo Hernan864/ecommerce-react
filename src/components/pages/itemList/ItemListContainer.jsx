@@ -18,7 +18,6 @@ const ItemListContainer = () => {
             consulta = query(productsCollection, where("category", "==", categoryName))
         }
         getDocs(consulta).then((res) => {
-            console.log(res.docs);
             let arrayProductos = res.docs.map((product) => {
                 return { ...product.data(), id: product.id };
             })
